@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+
+<div class="container-fluid" style="margin-top: 100px;">
+<h1>{{title}}</h1>
+
+<ul>
+    @for (user of Users; track $index) {
+        <li>
+            {{user.id}} - {{ user.userName}}
+        </li>
+    }
+   
+</ul>
+
+</div>
